@@ -17,7 +17,7 @@ const scoreBoard = document.getElementById("scoreBoard");
 const finalScore = document.getElementById("finalScore");
 const toast = document.getElementById("toast");
 
-const hitSound = document.getElementById("hitSound");
+const hitsound = document.getElementById("hitsound");
 const gameoverSound = document.getElementById("gameover");
 
 const moveDelay = 1100;
@@ -93,8 +93,8 @@ function hitTarget() {
   scoreDisplay.textContent = score;
 
   // 🔊 Play hit sound
-  hitSound.currentTime = 0;
-  hitSound.play();
+  hitsound.currentTime = 0;
+  hitsound.play();
 
   moveTarget();
 }
