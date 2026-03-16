@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Hit The Target Game</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Hit The Target Game</h1>
+
+<div class="controls">
+<input type="file" id="uploadImage" accept="image/*">
+<button id="startButton">Start Game</button>
+</div>
+
+<p id="statusText">Upload an image to turn it into a toy target.</p>
+
+<h2>Score: <span id="score">0</span></h2>
+<h2>Time: <span id="time">30</span>s</h2>
+
+<div id="gameArea">
+<div id="target" aria-label="Toy target" role="button" tabindex="0">
+<div class="pin-shell">
+<img id="targetImage" src="" alt="Uploaded toy target" draggable="false">
+<span class="pin-stripes" aria-hidden="true"></span>
+</div>
+<span class="toy-badge">Pin Toy</span>
+</div>
+</div>
+
+<div id="scoreBoard" hidden>
+<h3>Score Board</h3>
+<p>Your final score: <span id="finalScore">0</span></p>
+</div>
+
+<div id="toast" aria-live="polite" aria-atomic="true"></div>
+<audio id="hitSound" src="/sounds/hitsound.mp3" preload="auto"></audio>
+<audio id="gameover" src="/sounds/gameover.mp3" preload="auto"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
