@@ -65,7 +65,7 @@ hit-target-game
 1. Download or clone the repository.
 
 ```
-git clone https://github.com/YOUR_USERNAME/hit-target-game.git
+git clone https://github.com/Hari-544/hit-target-game.git
 ```
 
 2. Open the project folder.
@@ -93,7 +93,7 @@ The game uses two audio effects:
 
 | Sound        | Purpose                      |
 | ------------ | ---------------------------- |
-| hit.mp3      | Plays when the target is hit |
+| hitsound.mp3      | Plays when the target is hit |
 | gameover.mp3 | Plays when the game ends     |
 
 These files are stored inside the **sounds** folder.
