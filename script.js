@@ -20,7 +20,7 @@ const toast = document.getElementById("toast");
 const hitsound = document.getElementById("hitsound");
 const gameoverSound = document.getElementById("gameover");
 
-const moveDelay = 1100;
+const moveDelay = 100;
 let toastTimeout;
 
 upload.addEventListener("change", () => {
